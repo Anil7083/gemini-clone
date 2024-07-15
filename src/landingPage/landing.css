@@ -173,6 +173,9 @@
     .navbar1{
         display: none;
     }
+    .btn1::before{
+        opacity: 1;
+    }
 }
 @media (max-width:458px){
     .mail1{
