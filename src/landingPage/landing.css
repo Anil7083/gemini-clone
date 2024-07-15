@@ -170,6 +170,9 @@
         width: 200px;
         height: 450px;
     }
+    .navbar1{
+        display: none;
+    }
 }
 @media (max-width:458px){
     .mail1{
@@ -177,5 +180,14 @@
     }
     .cont1{
         margin-left: 25px;
+    }
+    .img img{
+        margin-right: 5px;
+        width: 200px;
+        height: 250px;
+    }
+    .img{
+        width: 200px;
+        height: 250px;
     }
 }
