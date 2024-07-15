@@ -1,0 +1,152 @@
+@import url("https://fonts.googleais.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.main1{
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    background-color: #000;
+    
+}
+.nav1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 3%;
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo1{
+    font-size: 1.5rem;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 200;
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(
+        to right,rgb(250,78,10),rgb(247,12,204),rgb(0,106,255),rgb(48,248,255),rgb(250,78,10)
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientanimation 3s linear infinite;
+}
+.faq1{
+    font-size: 1rem;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 270;
+}
+@media (max-width:768px) {
+    .faq1{
+        display: none;
+    }
+}
+.btn1{
+    padding: 15px 40px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    color: #ffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 25px;
+}
+.btn1::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+}
+.btn1::before{
+    content:"";
+    background: linear-gradient(
+        45deg,#ff0000, #ff7300,#fffB00,#48ff00,#00ffd5,#002bff,#ff00cb,#ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+@keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+.btn1:hover::before{
+    opacity: 1;
+}
+.btn1:active::after{
+    background: transparent;
+}
+.btn1:active{
+    color: #000;
+    font-weight: bold;
+}
+.cont1{
+    margin-top: 280px;
+    margin-left: 160px;
+    color: #ffff;
+}
+#btn2{
+    margin-top: 3rem;
+}
+.h1{
+    font-size: 4rem;
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(
+        to right,rgb(250,78,10),rgb(247,12,204),rgb(0,106,255),rgb(48,248,255),rgb(250,78,10)
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientanimation 3s linear infinite;
+}
+@keyframes gradientanimation{
+    0%{
+        background-position: 200% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+#p1{
+    font-size: x-large;
+    font-family: "Poppins",sans-serif;
+}
+#p2{
+    margin-top: 7px;
+}
+.img img{
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    border:2px solid;
+}
+.img{
+    margin-top: -320px;
+    margin-right: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
