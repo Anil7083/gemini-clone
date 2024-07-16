@@ -49,6 +49,7 @@
 }
 .btn1{
     padding: 15px 40px;
+    padding-right: 56px;
     margin-left: 15px;
     border: none;
     outline: none;
@@ -150,6 +151,12 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+.google{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 4px;
+}
 @media (max-width:1230px){
     .img{
         margin-right: 20px;
@@ -192,5 +199,14 @@
     .img{
         width: 200px;
         height: 250px;
+    }
+    .h1{
+        font-size: 2.8rem;
+    }
+    #p1{
+        font-size: 1.2rem;
+    }
+    #p2{
+        font-size: 1rem;
     }
 }

@@ -19,14 +19,14 @@ const LandingPage = () => {
 
                 <nav className="navbar1">
                     <Link className="faq1">FAQ</Link>
-                    <button className="btn1" onClick={signupwithGoogle}>Sign in</button>
+                    <button className="btn1" onClick={signupwithGoogle}>Sign in<img className="google" src={assets.google} alt=""/></button>
                 </nav>
             </div>
             <div className="cont1">
                 <h1 className="h1">Gemini</h1>
                 <p id="p1">Supercharge your creativity and productivity</p>
                 <p id="p2">Chat to start writing, planning, learning and more with Google AI</p>
-                <button id="btn2" className="btn1" onClick={signupwithGoogle}>Sign in</button>
+                <button id="btn2" className="btn1" onClick={signupwithGoogle}>Sign in<img className="google" src={assets.google} alt=""/></button>
                 <div className="img">
                     <img src={assets.image1} alt="" />
                 </div>
