@@ -52,3 +52,9 @@ h2,h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.btn1 .logout{
+    width: 24px;
+    margin: 0;
+    margin-left: 5px;
+    position: absolute;
+}

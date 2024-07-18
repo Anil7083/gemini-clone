@@ -18,6 +18,7 @@ import image2 from './image2.jpg'
 import image3 from './image3.jpg'
 import image4 from './image4.jpg'
 import google from './google.png'
+import logout from './logout.png'
 
 export const assets = {
     history_icon,
@@ -39,5 +40,6 @@ export const assets = {
     image1,
     image2,
     image3,
-    image4
+    image4,
+    logout
 }

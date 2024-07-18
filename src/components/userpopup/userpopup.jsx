@@ -3,6 +3,7 @@ import './userpopup.css';
 import { UserContext } from "../../UserContext";
 import { getAuth, signOut } from "firebase/auth";
 import { app } from "../../firebase/firebase";
+import { assets } from "../../assets/assets";
 const auth = getAuth(app);
 
 const UserPopUp=()=>{
@@ -23,7 +24,7 @@ const UserPopUp=()=>{
                         <h3>{user.email}</h3>
                         <img src={user.photoURL} alt="" />
                         <h2>Hi, {user.displayName}</h2>
-                        <button onClick={() => signOut(auth)} id="btn2" className="btn1">logout</button>
+                        <button onClick={() => signOut(auth)} id="btn2" className="btn1">logout <img className="logout" src={assets.logout} alt="" /></button>
                     </div>
                 </div>
             </div>
